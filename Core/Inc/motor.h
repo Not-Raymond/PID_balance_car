@@ -3,9 +3,9 @@
 #include "main.h"
 
 typedef struct{
-    uint16_t encoder_val;
-    uint16_t current_speed;
-    uint16_t encoder_last_val;
+    int16_t encoder_val;
+    int16_t current_speed;
+    int16_t encoder_last_val;
 }motor_p;
 
 void motor_init( void);

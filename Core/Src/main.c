@@ -53,18 +53,18 @@ uint8_t buffer[8];
 extern motor_p motor_left;
 extern motor_p motor_right;
 extern uint16_t degree[3];
-float Kp = 3;
-float Ki = 0.01;
-float Kd = 1;
+float Kp = 1;
+float Ki = 0.006;
+float Kd = 0.2;
 float P_term;
 float I_term;
 float D_term;
-float Kp_v = 3;
-float Ki_v = 0.001;
-float Kd_v = 1;
-int16_t P_term_v;
-int16_t I_term_v;
-int16_t D_term_v;
+float Kp_v = -3;
+float Ki_v = -0.01;
+float Kd_v = -1;
+float P_term_v;
+float I_term_v;
+float D_term_v;
 uint16_t angle = 0;
 int16_t upright = 0;
 int32_t velocity = 0;
@@ -144,19 +144,25 @@ int main(void)
     HAL_UART_Receive_IT(&huart2, buffer, 8);
     time = HAL_GetTick();
     P_term = Kp*(real_degree - angle);
-    if(I_term <= 5000){
-      I_term = Ki*(real_degree - angle)*time;
+    if((Ki*(real_degree - angle)*time) < 5000){
+      I_term = -5000;
+    }
+    else if((Ki*(real_degree - angle)*time) > 5000){
+      I_term = 5000;
     }
     else{
-      I_term = 5000;
+      I_term = Ki*(real_degree - angle)*time;
     }
     D_term = Kd*(real_degree - angle)/time;
     P_term_v = Kp_v*(real_speed);
-    if(I_term_v <= 5000){
-      I_term_v = Ki_v*(real_speed)*time;
+    if((Ki_v*(real_speed)*time) < 5000){
+      I_term_v = -5000;
+    }
+    else if((Ki_v*(real_speed)*time) > 5000){
+      I_term_v = 5000;
     }
     else{
-      I_term_v = 5000;
+      I_term_v = Ki_v*(real_speed)*time;
     }
     D_term_v = Kd_v*(real_speed)/time;
     upright = P_term + D_term;
