@@ -1,0 +1,267 @@
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccznqYRb.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"pid.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.PID_init,"ax",%progbits
+  16              		.align	1
+  17              		.global	PID_init
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	PID_init:
+  25              	.LFB68:
+  26              		.file 1 "Core/Src/pid.c"
+   1:Core/Src/pid.c **** #include "pid.h"
+   2:Core/Src/pid.c **** #include "stdio.h"
+   3:Core/Src/pid.c **** 
+   4:Core/Src/pid.c **** pid_p pid;
+   5:Core/Src/pid.c **** 
+   6:Core/Src/pid.c **** void PID_init(){
+  27              		.loc 1 6 16 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 08B5     		push	{r3, lr}
+  32              	.LCFI0:
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 3, -8
+  35              		.cfi_offset 14, -4
+   7:Core/Src/pid.c ****     printf("PID_init begin \n");
+  36              		.loc 1 7 5 view .LVU1
+  37 0002 0948     		ldr	r0, .L3
+  38 0004 FFF7FEFF 		bl	puts
+  39              	.LVL0:
+   8:Core/Src/pid.c ****     pid.SetVoltage = 0.0;
+  40              		.loc 1 8 5 view .LVU2
+  41              		.loc 1 8 20 is_stmt 0 view .LVU3
+  42 0008 084B     		ldr	r3, .L3+4
+  43 000a 0022     		movs	r2, #0
+  44 000c 1A60     		str	r2, [r3]	@ float
+   9:Core/Src/pid.c ****     pid.ActualVoltage = 0.0;
+  45              		.loc 1 9 5 is_stmt 1 view .LVU4
+  46              		.loc 1 9 23 is_stmt 0 view .LVU5
+  47 000e 5A60     		str	r2, [r3, #4]	@ float
+  10:Core/Src/pid.c ****     pid.err = 0.0;
+  48              		.loc 1 10 5 is_stmt 1 view .LVU6
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccznqYRb.s 			page 2
+
+
+  49              		.loc 1 10 13 is_stmt 0 view .LVU7
+  50 0010 9A60     		str	r2, [r3, #8]	@ float
+  11:Core/Src/pid.c ****     pid.err_last = 0.0;
+  51              		.loc 1 11 5 is_stmt 1 view .LVU8
+  52              		.loc 1 11 18 is_stmt 0 view .LVU9
+  53 0012 DA60     		str	r2, [r3, #12]	@ float
+  12:Core/Src/pid.c ****     pid.voltage = 0.0;
+  54              		.loc 1 12 5 is_stmt 1 view .LVU10
+  55              		.loc 1 12 17 is_stmt 0 view .LVU11
+  56 0014 1A62     		str	r2, [r3, #32]	@ float
+  13:Core/Src/pid.c ****     pid.integral = 0.0;
+  57              		.loc 1 13 5 is_stmt 1 view .LVU12
+  58              		.loc 1 13 18 is_stmt 0 view .LVU13
+  59 0016 5A62     		str	r2, [r3, #36]	@ float
+  14:Core/Src/pid.c ****     pid.Kp = 0.0;
+  60              		.loc 1 14 5 is_stmt 1 view .LVU14
+  61              		.loc 1 14 12 is_stmt 0 view .LVU15
+  62 0018 1A61     		str	r2, [r3, #16]	@ float
+  15:Core/Src/pid.c ****     pid.Ki = 0.0;
+  63              		.loc 1 15 5 is_stmt 1 view .LVU16
+  64              		.loc 1 15 12 is_stmt 0 view .LVU17
+  65 001a 5A61     		str	r2, [r3, #20]	@ float
+  16:Core/Src/pid.c ****     pid.Kd = 0.0;
+  66              		.loc 1 16 5 is_stmt 1 view .LVU18
+  67              		.loc 1 16 12 is_stmt 0 view .LVU19
+  68 001c 9A61     		str	r2, [r3, #24]	@ float
+  17:Core/Src/pid.c ****     printf("PID_init end \n");
+  69              		.loc 1 17 5 is_stmt 1 view .LVU20
+  70 001e 0448     		ldr	r0, .L3+8
+  71 0020 FFF7FEFF 		bl	puts
+  72              	.LVL1:
+  18:Core/Src/pid.c **** }
+  73              		.loc 1 18 1 is_stmt 0 view .LVU21
+  74 0024 08BD     		pop	{r3, pc}
+  75              	.L4:
+  76 0026 00BF     		.align	2
+  77              	.L3:
+  78 0028 00000000 		.word	.LC0
+  79 002c 00000000 		.word	pid
+  80 0030 10000000 		.word	.LC1
+  81              		.cfi_endproc
+  82              	.LFE68:
+  84              		.global	__aeabi_fsub
+  85              		.global	__aeabi_fadd
+  86              		.global	__aeabi_fmul
+  87              		.section	.text.PID_realize,"ax",%progbits
+  88              		.align	1
+  89              		.global	PID_realize
+  90              		.syntax unified
+  91              		.thumb
+  92              		.thumb_func
+  93              		.fpu softvfp
+  95              	PID_realize:
+  96              	.LVL2:
+  97              	.LFB69:
+  19:Core/Src/pid.c **** 
+  20:Core/Src/pid.c **** float PID_realize( float v, float v_r){
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccznqYRb.s 			page 3
+
+
+  98              		.loc 1 20 39 is_stmt 1 view -0
+  99              		.cfi_startproc
+ 100              		@ args = 0, pretend = 0, frame = 0
+ 101              		@ frame_needed = 0, uses_anonymous_args = 0
+ 102              		.loc 1 20 39 is_stmt 0 view .LVU23
+ 103 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+ 104              	.LCFI1:
+ 105              		.cfi_def_cfa_offset 24
+ 106              		.cfi_offset 3, -24
+ 107              		.cfi_offset 4, -20
+ 108              		.cfi_offset 5, -16
+ 109              		.cfi_offset 6, -12
+ 110              		.cfi_offset 7, -8
+ 111              		.cfi_offset 14, -4
+  21:Core/Src/pid.c ****     pid.SetVoltage = v;
+ 112              		.loc 1 21 5 is_stmt 1 view .LVU24
+ 113              		.loc 1 21 20 is_stmt 0 view .LVU25
+ 114 0002 154C     		ldr	r4, .L7
+ 115 0004 2060     		str	r0, [r4]	@ float
+  22:Core/Src/pid.c ****     pid.ActualVoltage = v_r;
+ 116              		.loc 1 22 5 is_stmt 1 view .LVU26
+ 117              		.loc 1 22 23 is_stmt 0 view .LVU27
+ 118 0006 6160     		str	r1, [r4, #4]	@ float
+  23:Core/Src/pid.c ****     pid.err = pid.SetVoltage - pid.ActualVoltage;
+ 119              		.loc 1 23 5 is_stmt 1 view .LVU28
+ 120              		.loc 1 23 30 is_stmt 0 view .LVU29
+ 121 0008 FFF7FEFF 		bl	__aeabi_fsub
+ 122              	.LVL3:
+ 123              		.loc 1 23 30 view .LVU30
+ 124 000c 0546     		mov	r5, r0
+ 125              		.loc 1 23 13 view .LVU31
+ 126 000e A060     		str	r0, [r4, #8]	@ float
+  24:Core/Src/pid.c ****     pid.integral += pid.err;
+ 127              		.loc 1 24 5 is_stmt 1 view .LVU32
+ 128              		.loc 1 24 18 is_stmt 0 view .LVU33
+ 129 0010 616A     		ldr	r1, [r4, #36]	@ float
+ 130 0012 FFF7FEFF 		bl	__aeabi_fadd
+ 131              	.LVL4:
+ 132 0016 0646     		mov	r6, r0
+ 133 0018 6062     		str	r0, [r4, #36]	@ float
+  25:Core/Src/pid.c ****     pid.result = pid.Kp * pid.err + pid.Ki * pid.integral + pid.Kd * (pid.err - pid.err_last);
+ 134              		.loc 1 25 5 is_stmt 1 view .LVU34
+ 135              		.loc 1 25 25 is_stmt 0 view .LVU35
+ 136 001a 2169     		ldr	r1, [r4, #16]	@ float
+ 137 001c 2846     		mov	r0, r5
+ 138 001e FFF7FEFF 		bl	__aeabi_fmul
+ 139              	.LVL5:
+ 140 0022 0746     		mov	r7, r0
+ 141              		.loc 1 25 44 view .LVU36
+ 142 0024 6169     		ldr	r1, [r4, #20]	@ float
+ 143 0026 3046     		mov	r0, r6
+ 144 0028 FFF7FEFF 		bl	__aeabi_fmul
+ 145              	.LVL6:
+ 146              		.loc 1 25 35 view .LVU37
+ 147 002c 0146     		mov	r1, r0
+ 148 002e 3846     		mov	r0, r7
+ 149 0030 FFF7FEFF 		bl	__aeabi_fadd
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccznqYRb.s 			page 4
+
+
+ 150              	.LVL7:
+ 151 0034 0646     		mov	r6, r0
+ 152              		.loc 1 25 64 view .LVU38
+ 153 0036 A769     		ldr	r7, [r4, #24]	@ float
+ 154              		.loc 1 25 79 view .LVU39
+ 155 0038 E168     		ldr	r1, [r4, #12]	@ float
+ 156 003a 2846     		mov	r0, r5
+ 157 003c FFF7FEFF 		bl	__aeabi_fsub
+ 158              	.LVL8:
+ 159              		.loc 1 25 68 view .LVU40
+ 160 0040 0146     		mov	r1, r0
+ 161 0042 3846     		mov	r0, r7
+ 162 0044 FFF7FEFF 		bl	__aeabi_fmul
+ 163              	.LVL9:
+ 164              		.loc 1 25 59 view .LVU41
+ 165 0048 0146     		mov	r1, r0
+ 166 004a 3046     		mov	r0, r6
+ 167 004c FFF7FEFF 		bl	__aeabi_fadd
+ 168              	.LVL10:
+ 169              		.loc 1 25 16 view .LVU42
+ 170 0050 E061     		str	r0, [r4, #28]	@ float
+  26:Core/Src/pid.c ****     pid.err_last = pid.err;
+ 171              		.loc 1 26 5 is_stmt 1 view .LVU43
+ 172              		.loc 1 26 18 is_stmt 0 view .LVU44
+ 173 0052 E560     		str	r5, [r4, #12]	@ float
+  27:Core/Src/pid.c ****     return pid.result;
+ 174              		.loc 1 27 5 is_stmt 1 view .LVU45
+  28:Core/Src/pid.c **** }...
+ 175              		.loc 1 28 1 is_stmt 0 view .LVU46
+ 176 0054 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 177              	.L8:
+ 178 0056 00BF     		.align	2
+ 179              	.L7:
+ 180 0058 00000000 		.word	pid
+ 181              		.cfi_endproc
+ 182              	.LFE69:
+ 184              		.comm	pid,40,4
+ 185              		.section	.rodata.PID_init.str1.4,"aMS",%progbits,1
+ 186              		.align	2
+ 187              	.LC0:
+ 188 0000 5049445F 		.ascii	"PID_init begin \000"
+ 188      696E6974 
+ 188      20626567 
+ 188      696E2000 
+ 189              	.LC1:
+ 190 0010 5049445F 		.ascii	"PID_init end \000"
+ 190      696E6974 
+ 190      20656E64 
+ 190      2000
+ 191              		.text
+ 192              	.Letext0:
+ 193              		.file 2 "c:\\program files (x86)\\gnu tools arm embedded\\8 2019-q3-update\\arm-none-eabi\\include
+ 194              		.file 3 "c:\\program files (x86)\\gnu tools arm embedded\\8 2019-q3-update\\arm-none-eabi\\include
+ 195              		.file 4 "Drivers/CMSIS/Include/core_cm3.h"
+ 196              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 197              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 198              		.file 7 "Core/Inc/pid.h"
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccznqYRb.s 			page 5
+
+
+ 199              		.file 8 "c:\\program files (x86)\\gnu tools arm embedded\\8 2019-q3-update\\lib\\gcc\\arm-none-eab
+ 200              		.file 9 "c:\\program files (x86)\\gnu tools arm embedded\\8 2019-q3-update\\arm-none-eabi\\include
+ 201              		.file 10 "c:\\program files (x86)\\gnu tools arm embedded\\8 2019-q3-update\\arm-none-eabi\\includ
+ 202              		.file 11 "c:\\program files (x86)\\gnu tools arm embedded\\8 2019-q3-update\\arm-none-eabi\\includ
+ 203              		.file 12 "<built-in>"
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccznqYRb.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 pid.c
+C:\Users\user\AppData\Local\Temp\ccznqYRb.s:16     .text.PID_init:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccznqYRb.s:24     .text.PID_init:00000000 PID_init
+C:\Users\user\AppData\Local\Temp\ccznqYRb.s:78     .text.PID_init:00000028 $d
+                            *COM*:00000028 pid
+C:\Users\user\AppData\Local\Temp\ccznqYRb.s:88     .text.PID_realize:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccznqYRb.s:95     .text.PID_realize:00000000 PID_realize
+C:\Users\user\AppData\Local\Temp\ccznqYRb.s:180    .text.PID_realize:00000058 $d
+C:\Users\user\AppData\Local\Temp\ccznqYRb.s:186    .rodata.PID_init.str1.4:00000000 $d
+
+UNDEFINED SYMBOLS
+puts
+__aeabi_fsub
+__aeabi_fadd
+__aeabi_fmul
