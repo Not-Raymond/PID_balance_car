@@ -54,7 +54,7 @@ extern motor_p motor_left;
 extern motor_p motor_right;
 extern uint16_t degree[3];
 float Kp = 3;
-float Ki = 0.001;
+float Ki = 0.01;
 float Kd = 1;
 float P_term;
 float I_term;
