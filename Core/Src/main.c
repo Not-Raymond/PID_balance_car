@@ -53,18 +53,22 @@ uint8_t buffer[8];
 extern motor_p motor_left;
 extern motor_p motor_right;
 extern uint16_t degree[3];
-float Kp = 1;
-float Ki = 0.006;
-float Kd = 0.2;
+float Kp = 0.07;
+float Ki = 0.0001;
+float Kd = 5;
 float P_term;
 float I_term;
 float D_term;
-float Kp_v = -3;
+float last_speed = 0;
+float I_term_sum = 0;
+float Kp_v = -18;
 float Ki_v = -0.01;
-float Kd_v = -1;
+float Kd_v = -0.001;
 float P_term_v;
 float I_term_v;
 float D_term_v;
+float last_degree = 0;
+float I_term_v_sum = 0;
 uint16_t angle = 0;
 int16_t upright = 0;
 int32_t velocity = 0;
@@ -130,49 +134,59 @@ int main(void)
   HAL_TIM_Encoder_Start(&htim3,TIM_CHANNEL_ALL);
 
   HAL_TIM_Base_Start_IT(&htim4);
+  HAL_UART_Receive_IT(&huart2, buffer, 8);
   HAL_Delay(3000);
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    HAL_UART_Receive_IT(&huart2, buffer, 8);
-    time = HAL_GetTick();
+    time = 10;
+
+    motor_left.encoder_val = __HAL_TIM_GET_COUNTER(&htim3);
+    motor_left.current_speed = -(motor_left.encoder_val - motor_left.encoder_last_val);
+    motor_left.encoder_last_val = motor_left.encoder_val;
+
     P_term = Kp*(real_degree - angle);
-    if((Ki*(real_degree - angle)*time) < 5000){
-      I_term = -5000;
+    // if((Ki*(real_degree - angle)*time) < -5000){
+    if(I_term_sum < -5000){
+      I_term_sum = -5000;
     }
-    else if((Ki*(real_degree - angle)*time) > 5000){
-      I_term = 5000;
+    // else if((Ki*(real_degree - angle)*time) > 5000){
+    else if(I_term_sum > 5000){
+      I_term_sum = 5000;
     }
-    else{
+    else{  
       I_term = Ki*(real_degree - angle)*time;
+      I_term_sum += I_term;
     }
-    D_term = Kd*(real_degree - angle)/time;
+    D_term = Kd*(real_degree - last_degree)/time;
     P_term_v = Kp_v*(real_speed);
-    if((Ki_v*(real_speed)*time) < 5000){
-      I_term_v = -5000;
+    // if((Ki_v*(real_speed)*time) < -5000){
+    if(I_term_v_sum < -5000){
+      I_term_v_sum = -5000;
     }
-    else if((Ki_v*(real_speed)*time) > 5000){
-      I_term_v = 5000;
+    // else if((Ki_v*(real_speed)*time) > 5000){
+    else if((I_term_v_sum) > 5000){
+      I_term_v_sum = 5000;
     }
-    else{
+    else{  
       I_term_v = Ki_v*(real_speed)*time;
+      I_term_v_sum += I_term_v;
     }
-    D_term_v = Kd_v*(real_speed)/time;
-    upright = P_term + D_term;
-    velocity = P_term_v + I_term_v;
+    D_term_v = Kd_v*(real_speed - last_speed)/time;
+    upright = P_term + D_term + I_term_sum;
+    velocity = P_term_v + I_term_v_sum;
     preview = upright + velocity;
+    last_degree = real_degree;
+    last_speed = real_speed;
     
-
-
-    motor_left.encoder_val = __HAL_TIM_GET_COUNTER(&htim2);
-    motor_left.current_speed = motor_left.encoder_val - motor_left.encoder_last_val;
     if (motor_left.current_speed > 32767){
       real_speed = motor_left.current_speed - 65565;
     }
@@ -186,19 +200,13 @@ int main(void)
     else{
       real_degree = degree[1];
     }
-    if(time%1000 == 0){
-      motor_left.encoder_last_val = motor_left.encoder_val;
-      motor_right.encoder_val = __HAL_TIM_GET_COUNTER(&htim3);
-      motor_right.current_speed = motor_right.encoder_val - motor_right.encoder_last_val;
-      motor_right.encoder_last_val = motor_right.encoder_val;
-    }
 
     if ((upright + velocity) > 0){
       HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
       HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
       HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET);
       HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_SET);
-      output = upright + velocity;
+      output = (upright + velocity);
     }
     else{
       HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_SET);
@@ -210,7 +218,7 @@ int main(void)
     htim1.Instance->CCR1 = output;
     htim1.Instance->CCR4 = output;
 
-
+    HAL_Delay(10);
     //Assumed CCR4 is left wheel and CCR 1 is right wheel
     //Assumed B3,B4 is left wheel and B13,B14 is right wheel
     //Assumed SET move forward while RESET move backward

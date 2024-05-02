@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
   31:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** 
   32:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** /** @defgroup PWR PWR
   33:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @brief    PWR HAL module driver
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 2
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 2
 
 
   34:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @{
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
   88:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @}
   89:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   */
   90:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** 
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 3
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 3
 
 
   91:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** /** @defgroup PWR_CSR_register_alias PWR CSR Register alias address
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
   51              		.thumb
   52              		.thumb_func
   53              		.fpu softvfp
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 4
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 4
 
 
   55              	HAL_PWR_DeInit:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  159:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** }
   71              		.loc 1 159 1 is_stmt 0 view .LVU7
   72 0012 7047     		bx	lr
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 5
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 5
 
 
   73              	.L4:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  118              	.LFB68:
  173:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** 
  174:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** /**
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 6
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 6
 
 
  175:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @brief  Disables access to the backup domain (RTC registers, RTC
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  201:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****     [..]
  202:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****       (+) The PVD is used to monitor the VDD power supply by comparing it to a
  203:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****           threshold selected by the PVD Level (PLS[2:0] bits in the PWR_CR).
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 7
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 7
 
 
  204:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  258:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****              function with:
  259:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****           (++) PWR_REGULATOR_VALUE= PWR_MAINREGULATOR_ON: Main regulator ON.
  260:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****           (++) PWR_REGULATOR_VALUE= PWR_LOWPOWERREGULATOR_ON: Low Power regulator ON.
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 8
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 8
 
 
  261:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****           (++) PWR_SLEEPENTRY_WFx= PWR_SLEEPENTRY_WFI: enter STOP mode with WFI instruction
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  315:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** void HAL_PWR_ConfigPVD(PWR_PVDTypeDef *sConfigPVD)
  316:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** {
  149              		.loc 1 316 1 is_stmt 1 view -0
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 9
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 9
 
 
  150              		.cfi_startproc
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  187 0038 114A     		ldr	r2, .L16+4
  188 003a 1368     		ldr	r3, [r2]
  189 003c 43F48033 		orr	r3, r3, #65536
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 10
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 10
 
 
  190 0040 1360     		str	r3, [r2]
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  227              	.L11:
  351:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   }
  352:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** }
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 11
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 11
 
 
  228              		.loc 1 352 1 is_stmt 0 view .LVU40
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  276              	.LFB71:
  363:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** 
  364:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** /**
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 12
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 12
 
 
  365:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @brief  Disables the Power Voltage Detector(PVD).
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  385:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   /* Enable the EWUPx pin */
  386:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   *(__IO uint32_t *) CSR_EWUP_BB(WakeUpPinx) = (uint32_t)ENABLE;
  313              		.loc 1 386 3 view .LVU51
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 13
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 13
 
 
  314              	.LBB6:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
   52:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __NO_RETURN
   53:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __NO_RETURN                            __attribute__((__noreturn__))
   54:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 14
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 14
 
 
   55:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __USED
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  109:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  110:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __ALIGNED
  111:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __ALIGNED(x)                           __attribute__((aligned(x)))
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 15
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 15
 
 
  112:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  166:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_CONTROL_NS(void)
  167:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  168:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 16
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 16
 
 
  169:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  223:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, apsr" : "=r" (result) );
  224:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  225:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 17
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 17
 
 
  226:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  280:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  281:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  282:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 18
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 18
 
 
  283:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  337:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
  338:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  339:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Main Stack Pointer (non-secure)
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 19
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 19
 
 
  340:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Main Stack Pointer (MSP) when in secure state.
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  394:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current state of the non-secure priority mask bit from the Priority Mask Reg
  395:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Priority Mask value
  396:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 20
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 20
 
 
  397:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_PRIMASK_NS(void)
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  451:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  452:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsid f" : : : "memory");
  453:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 21
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 21
 
 
  454:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  508:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  509:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  510:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 22
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 22
 
 
  511:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Base Priority with condition
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  565:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Fault Mask (non-secure)
  566:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Fault Mask register when in secure state.
  567:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    faultMask  Fault Mask value to set
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 23
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 23
 
 
  568:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  622:Drivers/CMSIS/Include/cmsis_gcc.h ****   return result;
  623:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  624:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 24
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 24
 
 
  625:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  679:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_MSPLIM(void)
  680:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  681:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (!(defined (__ARM_ARCH_8M_MAIN__ ) && (__ARM_ARCH_8M_MAIN__ == 1)) && \
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 25
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 25
 
 
  682:Drivers/CMSIS/Include/cmsis_gcc.h ****     (!defined (__ARM_FEATURE_CMSE) || (__ARM_FEATURE_CMSE < 3)))
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  736:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  737:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE  ) && (__ARM_FEATURE_CMSE   == 3))
  738:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 26
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 26
 
 
  739:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Main Stack Pointer Limit (non-secure)
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  793:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  794:Drivers/CMSIS/Include/cmsis_gcc.h **** #if ((defined (__FPU_PRESENT) && (__FPU_PRESENT == 1U)) && \
  795:Drivers/CMSIS/Include/cmsis_gcc.h ****      (defined (__FPU_USED   ) && (__FPU_USED    == 1U))     )
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 27
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 27
 
 
  796:Drivers/CMSIS/Include/cmsis_gcc.h **** #if __has_builtin(__builtin_arm_set_fpscr)
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  850:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __WFE()                             __ASM volatile ("wfe")
  851:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  852:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 28
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 28
 
 
  853:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  907:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("rev %0, %1" : __CMSIS_GCC_OUT_REG (result) : __CMSIS_GCC_USE_REG (value) );
  908:Drivers/CMSIS/Include/cmsis_gcc.h ****   return result;
  909:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 29
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 29
 
 
  910:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  964:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  965:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  966:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Breakpoint
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 30
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 30
 
 
  967:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Causes the processor to enter Debug state.
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  336 000c 9B00     		lsls	r3, r3, #2
  337              		.loc 1 386 46 view .LVU58
  338 000e 0122     		movs	r2, #1
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 31
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 31
 
 
  339 0010 1A60     		str	r2, [r3]
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  377              	.LVL4:
  378              		.loc 2 1001 3 view .LVU66
  379              		.loc 2 1001 3 is_stmt 0 view .LVU67
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 32
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 32
 
 
  380              		.thumb
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  421:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   UNUSED(Regulator);
  417              		.loc 1 421 3 view .LVU72
  422:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** 
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 33
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 33
 
 
  423:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   assert_param(IS_PWR_SLEEP_ENTRY(SLEEPEntry));
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  452              		.syntax unified
  453 0018 7047     		bx	lr
  454              	.L35:
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 34
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 34
 
 
  455 001a 00BF     		.align	2
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  469:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   CLEAR_BIT(PWR->CR,  PWR_CR_PDDS);
  484              		.loc 1 469 3 view .LVU86
  485 0002 0F4A     		ldr	r2, .L40
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 35
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 35
 
 
  486 0004 1368     		ldr	r3, [r2]
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  518 002e 1361     		str	r3, [r2, #16]
  492:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** }
  519              		.loc 1 492 1 is_stmt 0 view .LVU94
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 36
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 36
 
 
  520 0030 08BD     		pop	{r3, pc}
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  560              		.loc 1 505 3 view .LVU99
  561 0000 054A     		ldr	r2, .L43
  562 0002 1368     		ldr	r3, [r2]
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 37
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 37
 
 
  563 0004 43F00203 		orr	r3, r3, #2
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  528:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** {
  597              		.loc 1 528 1 is_stmt 1 view -0
  598              		.cfi_startproc
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 38
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 38
 
 
  599              		@ args = 0, pretend = 0, frame = 0
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  639              		.align	2
  640              	.L49:
  641 000c 00ED00E0 		.word	-536810240
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 39
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 39
 
 
  642              		.cfi_endproc
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  561:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @brief Disables CORTEX M3 SEVONPEND bit. 
  562:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @note Clears SEVONPEND bit of SCR register. When this bit is set, this causes 
  563:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   *       WFE to wake up when an interrupt moves from inactive to pended.         
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 40
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 40
 
 
  564:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @retval None
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  591:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** 
  592:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** /**
  593:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @brief  PWR PVD interrupt callback
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 41
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 41
 
 
  594:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @retval None
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  755              	.LVL12:
  588:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   }
  756              		.loc 1 588 5 view .LVU123
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 42
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 42
 
 
  757 0012 024B     		ldr	r3, .L62
@@ -2483,62 +2483,62 @@ ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 1
  776              		.file 8 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h"
  777              		.file 9 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h"
  778              		.file 10 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
-ARM GAS  C:\Users\user\AppData\Local\Temp\ccGkuG7w.s 			page 43
+ARM GAS  C:\Users\user\AppData\Local\Temp\ccQSgzYv.s 			page 43
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_hal_pwr.c
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:16     .text.PWR_OverloadWfe:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:23     .text.PWR_OverloadWfe:00000000 PWR_OverloadWfe
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:48     .text.HAL_PWR_DeInit:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:55     .text.HAL_PWR_DeInit:00000000 HAL_PWR_DeInit
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:76     .text.HAL_PWR_DeInit:00000014 $d
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:81     .text.HAL_PWR_EnableBkUpAccess:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:88     .text.HAL_PWR_EnableBkUpAccess:00000000 HAL_PWR_EnableBkUpAccess
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:105    .text.HAL_PWR_EnableBkUpAccess:00000008 $d
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:110    .text.HAL_PWR_DisableBkUpAccess:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:117    .text.HAL_PWR_DisableBkUpAccess:00000000 HAL_PWR_DisableBkUpAccess
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:134    .text.HAL_PWR_DisableBkUpAccess:00000008 $d
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:139    .text.HAL_PWR_ConfigPVD:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:146    .text.HAL_PWR_ConfigPVD:00000000 HAL_PWR_ConfigPVD
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:233    .text.HAL_PWR_ConfigPVD:0000007c $d
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:239    .text.HAL_PWR_EnablePVD:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:246    .text.HAL_PWR_EnablePVD:00000000 HAL_PWR_EnablePVD
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:263    .text.HAL_PWR_EnablePVD:00000008 $d
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:268    .text.HAL_PWR_DisablePVD:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:275    .text.HAL_PWR_DisablePVD:00000000 HAL_PWR_DisablePVD
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:292    .text.HAL_PWR_DisablePVD:00000008 $d
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:297    .text.HAL_PWR_EnableWakeUpPin:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:304    .text.HAL_PWR_EnableWakeUpPin:00000000 HAL_PWR_EnableWakeUpPin
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:345    .text.HAL_PWR_EnableWakeUpPin:00000014 $d
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:350    .text.HAL_PWR_DisableWakeUpPin:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:357    .text.HAL_PWR_DisableWakeUpPin:00000000 HAL_PWR_DisableWakeUpPin
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:397    .text.HAL_PWR_DisableWakeUpPin:00000014 $d
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:402    .text.HAL_PWR_EnterSLEEPMode:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:409    .text.HAL_PWR_EnterSLEEPMode:00000000 HAL_PWR_EnterSLEEPMode
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:457    .text.HAL_PWR_EnterSLEEPMode:0000001c $d
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:462    .text.HAL_PWR_EnterSTOPMode:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:469    .text.HAL_PWR_EnterSTOPMode:00000000 HAL_PWR_EnterSTOPMode
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:540    .text.HAL_PWR_EnterSTOPMode:00000040 $d
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:546    .text.HAL_PWR_EnterSTANDBYMode:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:553    .text.HAL_PWR_EnterSTANDBYMode:00000000 HAL_PWR_EnterSTANDBYMode
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:582    .text.HAL_PWR_EnterSTANDBYMode:00000018 $d
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:588    .text.HAL_PWR_EnableSleepOnExit:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:595    .text.HAL_PWR_EnableSleepOnExit:00000000 HAL_PWR_EnableSleepOnExit
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:612    .text.HAL_PWR_EnableSleepOnExit:0000000c $d
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:617    .text.HAL_PWR_DisableSleepOnExit:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:624    .text.HAL_PWR_DisableSleepOnExit:00000000 HAL_PWR_DisableSleepOnExit
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:641    .text.HAL_PWR_DisableSleepOnExit:0000000c $d
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:646    .text.HAL_PWR_EnableSEVOnPend:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:653    .text.HAL_PWR_EnableSEVOnPend:00000000 HAL_PWR_EnableSEVOnPend
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:670    .text.HAL_PWR_EnableSEVOnPend:0000000c $d
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:675    .text.HAL_PWR_DisableSEVOnPend:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:682    .text.HAL_PWR_DisableSEVOnPend:00000000 HAL_PWR_DisableSEVOnPend
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:699    .text.HAL_PWR_DisableSEVOnPend:0000000c $d
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:704    .text.HAL_PWR_PVDCallback:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:711    .text.HAL_PWR_PVDCallback:00000000 HAL_PWR_PVDCallback
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:724    .text.HAL_PWR_PVD_IRQHandler:00000000 $t
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:731    .text.HAL_PWR_PVD_IRQHandler:00000000 HAL_PWR_PVD_IRQHandler
-C:\Users\user\AppData\Local\Temp\ccGkuG7w.s:765    .text.HAL_PWR_PVD_IRQHandler:0000001c $d
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:16     .text.PWR_OverloadWfe:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:23     .text.PWR_OverloadWfe:00000000 PWR_OverloadWfe
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:48     .text.HAL_PWR_DeInit:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:55     .text.HAL_PWR_DeInit:00000000 HAL_PWR_DeInit
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:76     .text.HAL_PWR_DeInit:00000014 $d
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:81     .text.HAL_PWR_EnableBkUpAccess:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:88     .text.HAL_PWR_EnableBkUpAccess:00000000 HAL_PWR_EnableBkUpAccess
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:105    .text.HAL_PWR_EnableBkUpAccess:00000008 $d
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:110    .text.HAL_PWR_DisableBkUpAccess:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:117    .text.HAL_PWR_DisableBkUpAccess:00000000 HAL_PWR_DisableBkUpAccess
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:134    .text.HAL_PWR_DisableBkUpAccess:00000008 $d
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:139    .text.HAL_PWR_ConfigPVD:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:146    .text.HAL_PWR_ConfigPVD:00000000 HAL_PWR_ConfigPVD
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:233    .text.HAL_PWR_ConfigPVD:0000007c $d
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:239    .text.HAL_PWR_EnablePVD:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:246    .text.HAL_PWR_EnablePVD:00000000 HAL_PWR_EnablePVD
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:263    .text.HAL_PWR_EnablePVD:00000008 $d
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:268    .text.HAL_PWR_DisablePVD:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:275    .text.HAL_PWR_DisablePVD:00000000 HAL_PWR_DisablePVD
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:292    .text.HAL_PWR_DisablePVD:00000008 $d
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:297    .text.HAL_PWR_EnableWakeUpPin:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:304    .text.HAL_PWR_EnableWakeUpPin:00000000 HAL_PWR_EnableWakeUpPin
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:345    .text.HAL_PWR_EnableWakeUpPin:00000014 $d
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:350    .text.HAL_PWR_DisableWakeUpPin:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:357    .text.HAL_PWR_DisableWakeUpPin:00000000 HAL_PWR_DisableWakeUpPin
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:397    .text.HAL_PWR_DisableWakeUpPin:00000014 $d
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:402    .text.HAL_PWR_EnterSLEEPMode:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:409    .text.HAL_PWR_EnterSLEEPMode:00000000 HAL_PWR_EnterSLEEPMode
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:457    .text.HAL_PWR_EnterSLEEPMode:0000001c $d
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:462    .text.HAL_PWR_EnterSTOPMode:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:469    .text.HAL_PWR_EnterSTOPMode:00000000 HAL_PWR_EnterSTOPMode
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:540    .text.HAL_PWR_EnterSTOPMode:00000040 $d
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:546    .text.HAL_PWR_EnterSTANDBYMode:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:553    .text.HAL_PWR_EnterSTANDBYMode:00000000 HAL_PWR_EnterSTANDBYMode
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:582    .text.HAL_PWR_EnterSTANDBYMode:00000018 $d
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:588    .text.HAL_PWR_EnableSleepOnExit:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:595    .text.HAL_PWR_EnableSleepOnExit:00000000 HAL_PWR_EnableSleepOnExit
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:612    .text.HAL_PWR_EnableSleepOnExit:0000000c $d
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:617    .text.HAL_PWR_DisableSleepOnExit:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:624    .text.HAL_PWR_DisableSleepOnExit:00000000 HAL_PWR_DisableSleepOnExit
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:641    .text.HAL_PWR_DisableSleepOnExit:0000000c $d
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:646    .text.HAL_PWR_EnableSEVOnPend:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:653    .text.HAL_PWR_EnableSEVOnPend:00000000 HAL_PWR_EnableSEVOnPend
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:670    .text.HAL_PWR_EnableSEVOnPend:0000000c $d
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:675    .text.HAL_PWR_DisableSEVOnPend:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:682    .text.HAL_PWR_DisableSEVOnPend:00000000 HAL_PWR_DisableSEVOnPend
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:699    .text.HAL_PWR_DisableSEVOnPend:0000000c $d
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:704    .text.HAL_PWR_PVDCallback:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:711    .text.HAL_PWR_PVDCallback:00000000 HAL_PWR_PVDCallback
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:724    .text.HAL_PWR_PVD_IRQHandler:00000000 $t
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:731    .text.HAL_PWR_PVD_IRQHandler:00000000 HAL_PWR_PVD_IRQHandler
+C:\Users\user\AppData\Local\Temp\ccQSgzYv.s:765    .text.HAL_PWR_PVD_IRQHandler:0000001c $d
 
 NO UNDEFINED SYMBOLS
